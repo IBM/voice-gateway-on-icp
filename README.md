@@ -22,18 +22,20 @@ TODO: Flow diagram
 
 ## Included components
 
-* [IBM Cloud Private](): is an on-prem version of IBM Cloud.
-* [Watson Conversation](): enables rich and interactive natural language conversation with your users.
-* [Watson Text to Speech](): allows your users to listen to Watson.
-* [Watson Speech to Text](): allows Watson to listen to your users.
-* [Flask](): is a micro web framework.
+* [IBM Cloud Private](https://www.ibm.com/cloud/private): An on-prem version of IBM Cloud to store your sensitive data and applications.
+* [IBM Voice Gateway](https://www.ibm.com/support/knowledgecenter/en/SS4U29/welcome_voicegateway.html): A service that enables you to build apps that leverage Assistant, Text to Speech, and Speech to Text, without having to tie them all in manually.
+* [Watson Assistant](https://www.ibm.com/watson/developercloud/conversation.html): Create a chatbot with a program that conducts a conversation via auditory or textual methods.
+* [Watson Text to Speech](https://www.ibm.com/watson/developercloud/text-to-speech.html): Converts written text into natural sounding audio in a variety of languages and voices.
+* [Watson Speech to Text](https://www.ibm.com/watson/developercloud/speech-to-text.html): A service that converts human voice into written text.
+* [Twilio](https://console.ng.bluemix.net/catalog/services/twilio): Integrate voice, messaging, and VoIP into your web and mobile apps.
+* [Flask](http://flask.pocoo.org/): is a micro web framework.
 
 TODO: add links.
 
 ## Featured Technologies
 
-* [Artificial Intelligence](): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
-* [Python](): Python is a programming langauge that lets you work more quickly and integrate your systems more effectively.
+* [Artificial Intelligence](https://medium.com/ibm-data-science-experience): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
+* [Python](https://www.python.org/): Python is a programming langauge that lets you work more quickly and integrate your systems more effectively.
 
 ## Prerequisites
 
