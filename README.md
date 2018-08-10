@@ -35,7 +35,7 @@ TODO: add links.
 ## Featured Technologies
 
 * [Artificial Intelligence](https://medium.com/ibm-data-science-experience): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
-* [Python](https://www.python.org/): Python is a programming langauge that lets you work more quickly and integrate your systems more effectively.
+* [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
 
 ## Prerequisites
 
