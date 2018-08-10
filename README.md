@@ -43,8 +43,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Prerequisites
 
-* **A Twilio account**: [Sign up for free].(https://www.twilio.com/try-twilio)
-* **A running IBM Cloud Private**: Run the Community Edition using [these steps](https://github.com/IBM/deploy-ibm-cloud-private).
+* **Twilio account**: [Sign up for free](https://www.twilio.com/try-twilio)
+* **IBM Cloud Private Community Edition**: [Deploy instructions](https://github.com/IBM/deploy-ibm-cloud-private)
 
 ## Steps
 
