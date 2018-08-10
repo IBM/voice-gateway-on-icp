@@ -8,15 +8,17 @@ When the reader has completed this Code Pattern, they will understand how to:
 * Connect the Voice Gateway to Twilio via the SIP communication protocol
 * Use a Service Orchestration Engine with the Voice Gateway
 
+![](images/architecture.png)
+
 ## Flow
 
-1. Setup the Watson Assistant, Text to Speech, and Speech to Text services on the public cloud.
-2. Import the conversation flow, intents, and entities, into the Assistant service.
-3. Deploy the Voice Gateway on IBM Cloud Private.
-4. Setup Voice Gateway with Twilio.
-5. Setup the Service Orchestration Engine (SOE).
-6. Connect the Voice Gateway with the SOE.
-5. Call the Twilio phone number
+1. User phones a call center phone number, associated with a Twilio account.
+2. The Twilio number connects to a configured Voice Gateway service via the SIP communication protocol. Voice Gateway is running on IBM Cloud Private.
+3. Voice Gateway calls Watson Speech to Text to transcribe user input.
+4. Based on user input, certain flows in Watson Assistant will be triggered.
+5. Any results from Watson Assistant will be transmitted back to the Voice Gateway service via Watson Text to Speech.
+6. Voice Gateway will sends the audio back to the Twilio Programmable Voice service.
+7. The resulting audio is played back to the user.
 
 ## Included components
 
@@ -33,38 +35,65 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [Artificial Intelligence](https://medium.com/ibm-data-science-experience): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
 
+<!--
+# Watch the Video
+
+[![](http://img.youtube.com/vi/b-94B3O1czU/0.jpg)](https://youtu.be/b-94B3O1czU)
+-->
+
 ## Prerequisites
+
+* **Twilio account**: [Sign up for free](https://www.twilio.com/try-twilio)
+* **IBM Cloud Private Community Edition**: [Deploy instructions](https://github.com/IBM/deploy-ibm-cloud-private)
 
 ## Steps
 
-### Setup IBM Cloud Private
+1. Create Watson services on IBM Cloud
+2. Import the conversation into Watson Assistant
+3. Deploy the Voice Gateway on IBM Cloud Private
+4. Configure Voice Gateway and Twilio
+5. Call the Twilio phone number
 
-In order to setup and install IBM Cloud Private Community Edition, please follow [these steps](https://github.com/IBM/deploy-ibm-cloud-private).
+### 1. Create Watson services on IBM Cloud
 
-### Create the Assistant, Speech to Text, and Text to Speech services on IBM Cloud
+Start by heading over to your IBM Cloud catalog and creating the three services listed below:
 
-Start by heading over to your IBM Cloud catalog and creating 3 services:
+* [Watson Assistant](https://console.ng.bluemix.net/catalog/services/conversation/)
+* [Watson Speech to Text](https://console.bluemix.net/catalog/services/speech-to-text/)
+* [Watson Text to Speech](https://console.bluemix.net/catalog/services/text-to-speech/)
 
-1. Watson Assistant
-1. Watson Speech to Text
-1. Watson Text to Speech
+### 2. Import the conversation into Watson Assistant
 
-### Setup your Assistant
+Now, setup your chatbot - you can either create your own chatbot, use the sample workspace provided in this code pattern, located in [data/workspace.json](data/workspace.json). Use the Watson Assistant tooling to import the dialog to a new workspace.
 
-Now, setup your chatbot - you can either create your own chatbot, use the example workspace provided in this code pattern, or use a conversation from another code pattern (e.g. TODO: Add other code pattern examples).
-
-If you'd like to use the workspace provided in this pattern, then import the [workspace.json]("data/workspace.json") file provided in the repo into your Assistant tooling.
-
-### Deploy the Voice Gateway on IBM Cloud Private
+### 3. Deploy the Voice Gateway on IBM Cloud Private
 
 The interface of IBM Cloud Private is, of course, very similar to that of IBM Cloud (public); so you should find it easy to navigate this interface if you're familiar with IBM Cloud.
 
-Head over to the Catalog, and either search for, or scroll down to, the `ibm-voice-gateway-dev` tile. Click on the tile, and then click "Configure".
+Head over to the Catalog, and either search for, or scroll down to, the `ibm-voice-gateway-dev` tile. Click on the tile, and then click _Configure_.
 
-You can then enter a "Release name" (the name of your service), a "Target namespace" (where to store this service), and then read the license agreements. If you agree, check the checkbox.
+You can then enter a _Release name_ (the name of your service), a _Target namespace_ (where to store this service), and then read the license agreements. If you agree, check the checkbox.
 
-Finally, you can ignore all of the fields in the following form except for the Watson API Credential fields - go ahead and fill them all out (Assistant, STT, TTS). Once you fill out these fields, you can click on the "Install" button.
+Finally, you can ignore all of the fields in the following form except for the Watson API Credential fields - go ahead and fill them all out (Assistant, STT, TTS). Once you fill out these fields, you can click on the _Install_ button.
 
-### Connect Voice Gateway with Twilio through SIP
+### 4. Configure Voice Gateway and Twilio
 
 TODO: Steve, please fill this out as you're the expert at navigating the "documentation" for ICP.
+
+## Sample output
+
+TODO
+
+## Links
+
+TODO
+
+## Learn more
+
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+
+## License
+
+[Apache 2.0](LICENSE)
