@@ -4,7 +4,7 @@ This code pattern is a Voice Gateway application that enables companies to autom
 
 When the reader has completed this Code Pattern, they will understand how to:
 
-* Provision Watson services on IBM Public Cloud
+* Provision Watson Assistant, Speech to Text, and Text to Speech services on IBM Cloud
 * Import a sample Call Center dialog to Watson Assistant
 * Deploy a Voice Gateway service on IBM Cloud Private
 * Connect Voice Gateway to Twilio via the SIP communication protocol
