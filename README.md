@@ -4,9 +4,10 @@ This code pattern is a Voice Gateway application that enables companies to autom
 
 When the reader has completed this Code Pattern, they will understand how to:
 
-* Deploy the Voice Gateway on an IBM Cloud Private Instance
-* Connect the Voice Gateway to Twilio via the SIP communication protocol
-* Use a Service Orchestration Engine with the Voice Gateway
+* Provision Watson services on IBM Public Cloud
+* Import a sample Call Center dialog to Watson Assistant
+* Deploy a Voice Gateway service on IBM Cloud Private
+* Connect Voice Gateway to Twilio via the SIP communication protocol
 
 ![](images/architecture.png)
 
@@ -48,11 +49,10 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Steps
 
-1. Create Watson services on IBM Cloud
-2. Import the conversation into Watson Assistant
-3. Deploy the Voice Gateway on IBM Cloud Private
-4. Configure Voice Gateway and Twilio
-5. Call the Twilio phone number
+1. [Create Watson services on IBM Cloud](#1-create-watson-services-on-ibm-cloud)
+2. [Import the conversation into Watson Assistant](#2-import-the-conversation-into-watson-assistant)
+3. [Deploy the Voice Gateway on IBM Cloud Private](#3-deploy-the-voice-gateway-on-ibm-cloud-private)
+4. [Configure Voice Gateway and Twilio](#4-configure-voice-gateway-and-twilio)
 
 ### 1. Create Watson services on IBM Cloud
 
@@ -62,31 +62,72 @@ Start by heading over to your IBM Cloud catalog and creating the three services 
 * [Watson Speech to Text](https://console.bluemix.net/catalog/services/speech-to-text/)
 * [Watson Text to Speech](https://console.bluemix.net/catalog/services/text-to-speech/)
 
+We'll need the credentials for each of these. To retrieve them, navigate to each created service and select the **Credentials** tab.
+
+<!--TODO Add a screenshot of credentials here -->
+
 ### 2. Import the conversation into Watson Assistant
 
-Now, setup your chatbot - you can either create your own chatbot, use the sample workspace provided in this code pattern, located in [data/workspace.json](data/workspace.json). Use the Watson Assistant tooling to import the dialog to a new workspace.
+Now, setup your chatbot - you can either create your own chatbot, use the sample workspace provided in this code pattern, located in [data/workspace.json](data/workspace.json). Use the Watson Assistant tooling to import the dialog to a new workspace. To do this, launch the Watson Assistant tool and use the `import` icon button on the right. Find the [`data/workspace.json`](data/workspace.json) file from the cloned repo and import that to the Watson Assistant tool.
+
+Each workspace in Watson Assistant has a specific ID. To find the `Workspace ID` for a given workspace, click the context menu of the workspace and select `View details`. The workspace ID can be copied and saved as we'll need it in the next step.
+
+<!--TODO Add a screenshot of importing the workspace -->
 
 ### 3. Deploy the Voice Gateway on IBM Cloud Private
 
 The interface of IBM Cloud Private is, of course, very similar to that of IBM Cloud (public); so you should find it easy to navigate this interface if you're familiar with IBM Cloud.
 
-Head over to the Catalog, and either search for, or scroll down to, the `ibm-voice-gateway-dev` tile. Click on the tile, and then click _Configure_.
+Head over to the Catalog, and either search for, or scroll down to, the `ibm-voice-gateway-dev` tile and select it.
+
+![](images/catalog.png)
+
+Once the next screen loads choose to _Configure_ your Voice Gateway service.
+
+![](images/overview.png)
 
 You can then enter a _Release name_ (the name of your service), a _Target namespace_ (where to store this service), and then read the license agreements. If you agree, check the checkbox.
 
-Finally, you can ignore all of the fields in the following form except for the Watson API Credential fields - go ahead and fill them all out (Assistant, STT, TTS). Once you fill out these fields, you can click on the _Install_ button.
+![](images/name.png)
+
+Finally, you can ignore all of the fields in the following form except for the Watson API Credential fields - go ahead and fill them all out (Assistant, Speech to Text, Text to Speech). Once you fill out these fields, you can click on the _Install_ button.
+
+![](images/credentials.png)
+
+Once up and running, you should be able to view the running Voice Gateway service. **NOTE:** Be sure to note the host IP address, we'll be needing that in the next section.
+
+![](images/icp.png)
 
 ### 4. Configure Voice Gateway and Twilio
 
-TODO: Steve, please fill this out as you're the expert at navigating the "documentation" for ICP.
+For this next section we'll create a new Twilio account. The Twilio account will provide us with a free phone number for a few days and the ability to configure an SIP trunk to connect with our Voice Gateway.
+
+Here's the free number for our Programmable Voice service
+
+![](images/number.png)
+
+Go to the menu and create a new SIP Trunk
+
+![](images/trunk.png)
+
+Set the new trunk's origination URI to: `sip:icp_ip_address:voice_gateway_port;transport=tcp`
+
+![](images/sip.png)
 
 ## Sample output
 
 TODO
 
-## Links
+## Extending and modifying the dialog
 
 TODO
+
+## Links
+
+* this doc: https://www.ibm.com/support/knowledgecenter/en/SS4U29/gettingstarted.html
+* and this one: https://www.ibm.com/support/knowledgecenter/SS4U29/twilio.html
+* sample convo
+* icp deploy instructions
 
 ## Learn more
 
