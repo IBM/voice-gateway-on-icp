@@ -108,15 +108,21 @@ To create a new SIP trunk connection go to the context menu and select _Elastic 
 
 ![](images/trunk.png)
 
-The last step in getting our Twilio service and Voice Gateway talking to each other is to set the _Origination URI_ for our new SIP Trunk. Click the add button and set the new origination URI to:
+We now need to let Twilio know about our Voice Gateway service. Set the _Origination URI_ for our new SIP Trunk. The value should look like the line below.
 
 ```
 sip:icp_ip_address:voice_gateway_port;transport=tcp
 ```
 
-Where `icp_ip_address` is the ICP IP address and `voice_gateway_port` the Voice Gateway port.
+Where `icp_ip_address` is the ICP IP address and `voice_gateway_port` the Voice Gateway port. By default the port is `5060`.
 
 ![](images/sip.png)
+
+The last step is to associate our free number with the SIP Trunk. Click on the _Numbers_ sub menu and add the phone number from the beginning of this step.
+
+![](images/sip_number.png)
+
+You're now ready to test things out!
 
 ## Sample output
 
