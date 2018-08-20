@@ -100,34 +100,36 @@ Once up and running, you should be able to view the running Voice Gateway servic
 
 ### 4. Configure Voice Gateway and Twilio
 
-For this next section we'll create a new Twilio account. The Twilio account will provide us with a free phone number for a few days and the ability to configure an SIP trunk to connect with our Voice Gateway.
-
-Here's the free number for our Programmable Voice service
+For this next section we'll create a new Twilio account. The Twilio account will provide us with a free phone number for a few days and the ability to configure an SIP trunk to connect with our Voice Gateway. Here's the free phone number that we'll use to configure with an SIP trunk.
 
 ![](images/number.png)
 
-Go to the menu and create a new SIP Trunk
+To create a new SIP trunk connection go to the context menu and select _Elastic SIP Trunking_. Create a new one with a unique name.
 
 ![](images/trunk.png)
 
-Set the new trunk's origination URI to: `sip:icp_ip_address:voice_gateway_port;transport=tcp`
+The last step in getting our Twilio service and Voice Gateway talking to each other is to set the _Origination URI_ for our new SIP Trunk. Click the add button and set the new origination URI to:
+
+```
+sip:icp_ip_address:voice_gateway_port;transport=tcp
+```
+
+Where `icp_ip_address` is the ICP IP address and `voice_gateway_port` the Voice Gateway port.
 
 ![](images/sip.png)
 
 ## Sample output
 
-TODO
+Once the twilio configuration has been completed try calling the phone number. You'll be greeted with the start of your Watson Assistant dialog. Try a few of the questions below to hear back the answers.
 
-## Extending and modifying the dialog
-
-TODO
+* _What are your hours?_
+* _Where are you located?_
 
 ## Links
 
-* this doc: https://www.ibm.com/support/knowledgecenter/en/SS4U29/gettingstarted.html
-* and this one: https://www.ibm.com/support/knowledgecenter/SS4U29/twilio.html
-* sample convo
-* icp deploy instructions
+* [Deploy IBM Cloud Private](https://github.com/IBM/deploy-ibm-cloud-private/): Instructions and scripts to automate the deployment of IBM Cloud Private on several platforms.
+* [Getting started with Voice Gateway](https://www.ibm.com/support/knowledgecenter/en/SS4U29/gettingstarted.html): Instructions on how to get started with Voice Gateway on Docker, Kubernetes, and IBM Cloud Private.
+* [Setting up a Twilio SIP trunks](https://www.ibm.com/support/knowledgecenter/SS4U29/twilio.html): Setting up a Twilio SIP trunk for self-service agents with IBM Voice Gateway.
 
 ## Learn more
 
