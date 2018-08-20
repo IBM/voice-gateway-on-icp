@@ -29,7 +29,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [Watson Text to Speech](https://www.ibm.com/watson/developercloud/text-to-speech.html): Converts written text into natural sounding audio in a variety of languages and voices.
 * [Watson Speech to Text](https://www.ibm.com/watson/developercloud/speech-to-text.html): A service that converts human voice into written text.
 * [Twilio](https://console.ng.bluemix.net/catalog/services/twilio): Integrate voice, messaging, and VoIP into your web and mobile apps.
-* [Flask](http://flask.pocoo.org/): is a micro web framework.
 
 ## Featured Technologies
 
