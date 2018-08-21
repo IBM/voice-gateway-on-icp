@@ -125,7 +125,7 @@ You're now ready to test things out!
 
 ## Sample output
 
-Once the twilio configuration has been completed try calling the phone number. You'll be greeted with the start of your Watson Assistant dialog. Try a few of the questions below to hear back the answers.
+Once the Twilio configuration has been completed try calling the phone number. You'll be greeted with the start of your Watson Assistant dialog. Try a few of the questions below to hear back the answers.
 
 * _What are the hours of operation?_
 * _What's your location?_
