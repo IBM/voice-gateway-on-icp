@@ -127,8 +127,10 @@ You're now ready to test things out!
 
 Once the twilio configuration has been completed try calling the phone number. You'll be greeted with the start of your Watson Assistant dialog. Try a few of the questions below to hear back the answers.
 
-* _What are your hours?_
-* _Where are you located?_
+* _What are the hours of operation?_
+* _What's your location?_
+* _Can I speak to an advisor?_
+* _I'd like to make an appointment_
 
 ## Links
 
