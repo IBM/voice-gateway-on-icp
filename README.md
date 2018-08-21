@@ -18,7 +18,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 3. Voice Gateway calls Watson Speech to Text to transcribe user input.
 4. Based on user input, certain flows in Watson Assistant will be triggered.
 5. Any results from Watson Assistant will be transmitted back to the Voice Gateway service via Watson Text to Speech.
-6. Voice Gateway will sends the audio back to the Twilio Programmable Voice service.
+6. Voice Gateway will sends the audio back via the Elastic SIP Trunk.
 7. The resulting audio is played back to the user.
 
 ## Included components
