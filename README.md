@@ -35,11 +35,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [Artificial Intelligence](https://medium.com/ibm-data-science-experience): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
 
-<!--
 # Watch the Video
 
-[![](http://img.youtube.com/vi/b-94B3O1czU/0.jpg)](https://youtu.be/b-94B3O1czU)
--->
+[![](http://img.youtube.com/vi/AG3rti3yV1E/0.jpg)](https://youtu.be/AG3rti3yV1E)
 
 ## Prerequisites
 
