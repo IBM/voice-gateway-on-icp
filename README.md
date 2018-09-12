@@ -135,6 +135,7 @@ Once the Twilio configuration has been completed try calling the phone number. Y
 * [Deploy IBM Cloud Private](https://github.com/IBM/deploy-ibm-cloud-private/): Instructions and scripts to automate the deployment of IBM Cloud Private on several platforms.
 * [Getting started with Voice Gateway](https://www.ibm.com/support/knowledgecenter/en/SS4U29/gettingstarted.html): Instructions on how to get started with Voice Gateway on Docker, Kubernetes, and IBM Cloud Private.
 * [Setting up a Twilio SIP trunks](https://www.ibm.com/support/knowledgecenter/SS4U29/twilio.html): Setting up a Twilio SIP trunk for self-service agents with IBM Voice Gateway.
+* [Watch the Walkthrough on YouTube](https://www.youtube.com/watch?v=AG3rti3yV1E): A video demonstrating a walkthrough of this code pattern.
 
 ## Learn more
 
