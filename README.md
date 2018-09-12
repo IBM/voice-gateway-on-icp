@@ -135,13 +135,14 @@ Once the Twilio configuration has been completed try calling the phone number. Y
 * [Deploy IBM Cloud Private](https://github.com/IBM/deploy-ibm-cloud-private/): Instructions and scripts to automate the deployment of IBM Cloud Private on several platforms.
 * [Getting started with Voice Gateway](https://www.ibm.com/support/knowledgecenter/en/SS4U29/gettingstarted.html): Instructions on how to get started with Voice Gateway on Docker, Kubernetes, and IBM Cloud Private.
 * [Setting up a Twilio SIP trunks](https://www.ibm.com/support/knowledgecenter/SS4U29/twilio.html): Setting up a Twilio SIP trunk for self-service agents with IBM Voice Gateway.
+* [Watch the Walkthrough on YouTube](https://www.youtube.com/watch?v=AG3rti3yV1E): A video demonstrating a walkthrough of this code pattern.
 
 ## Learn more
 
 * **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
-* **  learn and  watch  on  https://www.youtube.com/watch?v=AG3rti3yV1E
+
 ## License
 
 [Apache 2.0](LICENSE)
