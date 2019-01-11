@@ -28,7 +28,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [Watson Assistant](https://www.ibm.com/watson/developercloud/conversation.html): Create a chatbot with a program that conducts a conversation via auditory or textual methods.
 * [Watson Text to Speech](https://www.ibm.com/watson/developercloud/text-to-speech.html): Converts written text into natural sounding audio in a variety of languages and voices.
 * [Watson Speech to Text](https://www.ibm.com/watson/developercloud/speech-to-text.html): A service that converts human voice into written text.
-* [Twilio](https://console.ng.bluemix.net/catalog/services/twilio): Integrate voice, messaging, and VoIP into your web and mobile apps.
+* [Twilio](https://cloud.ibm.com/catalog?search=twilio): Integrate voice, messaging, and VoIP into your web and mobile apps.
 
 ## Featured Technologies
 
@@ -37,7 +37,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Watch the Video
 
-[![](http://img.youtube.com/vi/AG3rti3yV1E/0.jpg)](https://youtu.be/AG3rti3yV1E)
+[![](https://img.youtube.com/vi/AG3rti3yV1E/0.jpg)](https://youtu.be/AG3rti3yV1E)
 
 ## Prerequisites
 
@@ -55,9 +55,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 Start by heading over to your IBM Cloud catalog and creating the three services listed below:
 
-* [Watson Assistant](https://console.ng.bluemix.net/catalog/services/conversation/)
-* [Watson Speech to Text](https://console.bluemix.net/catalog/services/speech-to-text/)
-* [Watson Text to Speech](https://console.bluemix.net/catalog/services/text-to-speech/)
+* [Watson Assistant](https://cloud.ibm.com/catalog/services/conversation/)
+* [Watson Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text/)
+* [Watson Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech/)
 
 We'll need the credentials for each of these. To retrieve them, navigate to each created service and select the **Credentials** tab.
 
@@ -139,12 +139,12 @@ Once the Twilio configuration has been completed try calling the phone number. Y
 
 ## Learn more
 
-* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
 ## License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
